@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+<div class="main-content">
+    <div class="heading">
+        <h1>Formulário</h1>
+        <h2>Registre suas informações:</h2>
+    </div>
+
+    <form>
+        <fieldset class="form-group">
+
+            <div class="nome-completo">
+                <div class="input">
+                    <label for="name">Nome:</label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div class="input">
+                    <label for="lname">Sobrenome:</label>
+                    <input type="text" name="lname" id="lname" required>
+                </div>
+            </div>
+
+            <div class="input" id="input-date">
+                <label for="date">Data de nascimento:</label>
+                <input type="date" name="date" id="date" required>
+            </div>
+
+            <div class="input" id="input-gender">
+                <p>Gênero: </p>
+                <div>
+                    <label>Masculino</label>
+                    <input type="radio" name="gender" value="masculino" required>
+                </div>
+                <div>
+                    <label>Feminino</label>
+                    <input type="radio" name="gender" value="feminino" required>
+                </div>
+                <div>
+                    <label>Outro</label>
+                    <input type="radio" name="gender" value="outro" required>
+                </div>
+            </div>
+
+            <div class="input" id="input-email">
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" placeholder="seuemail@email.com" required>
+            </div>
+            <div class="input" id="input-number">
+                <label for="number">Telefone:</label>
+                <input type="text" name="number" id="number" placeholder="(99) 99999-9999" required>
+            </div>
+            <div class="input" id="input-skills">
+                <label for="skills">Habilidades:</label>
+                <textarea name="skills" id="skills" placeholder="Escreva suas habilidades"></textarea>
+            </div>
+
+            <div class="submit">
+                <button type="submit" class="btn-submit">Enviar</button>
+            </div>
+        </fieldset>
+    </form>
+
+</div>
+</body>
+
+</html>
